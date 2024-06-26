@@ -1,0 +1,145 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    min-height:125vh; 
+    background-image: url("../2560x1462_1661523_[www.ArtFile.ru].jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+nav{
+    height: 80px;
+}
+nav .sidebar{
+    float: position;
+    line-height: 80px;
+}
+nav .sidebar li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 5px;
+}
+nav .sidebar li a{
+    color: deeppink;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 7px 8px;
+}
+nav .sidebar li a:hover{
+    background-color: lightpink;
+    transition: 0.5s ease;
+}
+.article{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(25vh);
+}
+
+.article p{
+    font-size: 18px;
+    color:#7e7e7e;
+    line-height: 1.5;
+    margin-bottom: 50pxa;
+}
+.article .btn{
+    color: #fff;
+    padding: 12px 25px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: lightpink;
+}
+.article .btn:hover{
+    background-color: #4399fa;
+    transition: 0.5s ease;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sodebar a{
+    width: 100%;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li {
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: deeppink;
+}
+nav a:hover{
+    background-color: lightpink;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.article{
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+}
+ h1{
+    
+    font-size:45px;
+    color: lightpink;
+ }
+ .menu-button{
+    display: none;
+ }
+ @media(max-width: 800px){
+    .hideOnMobile{
+        display:none;
+    }
+    .menu-button{
+        display: block;
+    }
+ }   
+ @media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+ }
+
